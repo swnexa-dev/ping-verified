@@ -129,8 +129,17 @@ Encapsula a integração com a API do Telegram. A integração é opcional: se a
 
 Variáveis esperadas:
 
+- `DEV_PORT`
+- `WEBAPP_PORT`
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
+
+Uso recomendado:
+
+- `DEV_PORT`: porta usada por `npm run dev` e `npm run start`
+- `WEBAPP_PORT`: porta usada por `npm run webapp`
+
+Há um modelo pronto em `./.env.example`.
 
 ### `src/services/events.service.js`
 

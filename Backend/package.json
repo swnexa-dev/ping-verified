@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src --ext js,mjs,cjs --ignore src/data/*.json src/server.js"
+    "dev": "nodemon --watch src --ext js,mjs,cjs --ignore src/data/*.json src/server.js",
+    "start": "node src/server.js",
+    "start:packaged": "node src/server.js --packaged",
+    "build:frontend": "npm --prefix ../Frontend run build",
+    "webapp": "npm run build:frontend && npm run start:packaged"
   },
   "keywords": [],
   "author": "",

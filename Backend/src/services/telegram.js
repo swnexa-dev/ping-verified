@@ -1,5 +1,5 @@
 import axios from 'axios'
-import 'dotenv/config'
+import '../env.js'
 
 const token = process.env.TELEGRAM_BOT_TOKEN
 const chatId = process.env.TELEGRAM_CHAT_ID
