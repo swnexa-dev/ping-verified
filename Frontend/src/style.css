@@ -1,0 +1,12 @@
+@import './styles/theme.css';
+@import './styles/base.css';
+@import './styles/app.css';
+@import './styles/views/dashboard.css';
+@import './styles/views/groups-page.css';
+@import './styles/components/device-form.css';
+@import './styles/components/device-groups.css';
+@import './styles/components/device-list.css';
+@import './styles/components/device-edit-modal.css';
+@import './styles/components/toast-container.css';
+@import './styles/components/alert-modal.css';
+@import './styles/components/loading-screen.css';

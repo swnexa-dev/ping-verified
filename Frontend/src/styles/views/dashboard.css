@@ -1,0 +1,124 @@
+.dashboard-page {
+  display: grid;
+  gap: 20px;
+}
+
+.dashboard-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.dashboard-page__title-block {
+  display: grid;
+  gap: 8px;
+}
+
+.dashboard-page__eyebrow {
+  margin: 0;
+  color: var(--accent-soft);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-page__header h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.08;
+}
+
+.dashboard-page__summary {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.dashboard-page__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.dashboard-stat {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+
+.dashboard-stat--danger {
+  border-color: rgba(239, 68, 68, 0.26);
+  background: linear-gradient(180deg, rgba(42, 15, 20, 0.88), rgba(22, 11, 17, 0.94));
+}
+
+.dashboard-stat__label {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-stat__value {
+  color: var(--text-primary);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.dashboard-stat__meta {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.dashboard-panel {
+  display: grid;
+  gap: 16px;
+  padding: 22px;
+}
+
+.dashboard-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dashboard-panel__eyebrow {
+  margin: 0 0 6px;
+  color: var(--accent-soft);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-panel__header h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.dashboard-panel__last-check {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .dashboard-page__stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .dashboard-page__header,
+  .dashboard-panel__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-page__header h2 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,63 @@
+.device-list {
+  display: grid;
+  gap: 0;
+}
+
+.device-list__item {
+  display: grid;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(78, 99, 134, 0.2);
+}
+
+.device-list__item:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.device-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.device-list__header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.device-list__header p {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+.device-list__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.device-list__status--online {
+  color: #86efac;
+}
+
+.device-list__status--offline {
+  color: #fca5a5;
+}
+
+.device-list__status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+@media (max-width: 640px) {
+  .device-list__header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1768335960667,
+    "name": "Impressora ADM",
+    "ip": "192.168.40.190",
+    "group": "Impressoras",
+    "online": false,
+    "lastCheck": null,
+    "offlineSince": null
+  },
+  {
+    "id": 1768336420464,
+    "name": "Impressora Caixa",
+    "ip": "192.168.40.80",
+    "group": "Impressoras",
+    "online": false,
+    "lastCheck": null,
+    "offlineSince": null
+  },
+  {
+    "id": 1768337749218,
+    "name": "DVR 2 Security",
+    "ip": "10.10.30.19",
+    "group": "DVRs",
+    "online": false,
+    "lastCheck": null,
+    "offlineSince": null
+  }
+]
