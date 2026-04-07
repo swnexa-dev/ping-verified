@@ -2,3 +2,6 @@
 .env.*
 !.env.example
 /Backend/.env
+/data/devices.json
+/Backend/data/devices.json
+/Backend/src/data/devices.json
