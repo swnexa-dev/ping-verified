@@ -126,6 +126,8 @@ Aplicação esperada em `http://localhost:5173`.
 Se quiser habilitar notificações por Telegram, configure:
 
 ```env
+DEV_PORT=3000
+WEBAPP_PORT=3004
 TELEGRAM_BOT_TOKEN=seu_token
 TELEGRAM_CHAT_ID=seu_chat_id
 ```

@@ -141,7 +141,13 @@ Essa decisão evita o comportamento clássico de flooding visual em interfaces m
 
 Usa `axios` com `baseURL` fixa apontando para o backend local.
 
-Se a API mudar de porta ou de host, esse é o primeiro lugar a ser ajustado.
+Se a API mudar de porta ou de host no modo de desenvolvimento, o frontend pode usar a variável `VITE_API_BASE_URL`.
+
+Exemplo:
+
+```env
+VITE_API_BASE_URL=http://localhost:3010
+```
 
 ## Estilização
 
