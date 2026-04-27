@@ -9,6 +9,7 @@ const api = axios.create({
 })
 
 export async function sendTelegram(message) {
+  // Integração opcional: sem credenciais o backend segue operando sem bloquear fluxo.
   if (!token || !chatId) {
     console.warn('Telegram não configurado')
     return
